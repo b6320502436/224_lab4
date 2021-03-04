@@ -3,7 +3,7 @@
 main()
 {
 	int a,b=0,c,d,e=1,g;
-	char A[100]={},B[10]={},f;
+	char A[10000]={},B[1000]={},f;
 	scanf("%s",A);
 	g=strlen(A);
 	do
