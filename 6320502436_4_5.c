@@ -4,6 +4,9 @@ main()
 {
 	int a,b,c,d,e,B[2][2]={{1,0},{0,0}};
 	char A[100]={};
+	scanf("%d",&d);
+	for(e=0;e<d;e++)
+	{
 	scanf("%s",&A);
 	a=strlen(A);
 	for(b=0;b<a;b++)
@@ -49,21 +52,21 @@ main()
 	}
 	if(B[0][0]==1)
 	{
-		printf("1");
+		printf("1\n");
 	}
 	else if(B[0][1]==1)
 	{
-		printf("2");
+		printf("2\n");
 	}
 	else if(B[1][0]==1)
 	{
-		printf("3");
+		printf("3\n");
 	}
 	else if(B[1][1]==1)
 	{
-		printf("4");
+		printf("4\n");
 	}
-
+}
 
 }
 
