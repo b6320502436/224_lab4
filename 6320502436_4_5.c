@@ -1,12 +1,17 @@
 #include<stdio.h>
 #include<string.h>
-main()
+int main()
 {
-	int a,b,c,d,e,B[2][2]={{1,0},{0,0}};
+	int a,b,c,d,e,B[2][2]={{1,0},{0,0}},f;
 	char A[100]={};
 	scanf("%d",&d);
-	for(e=0;e<d;e++)
+	
+while(d>=0)
 	{
+	 B[0][0]=1;
+        B[0][1]=0;
+      B[1][0]=0;
+       B[1][1]=0;
 	scanf("%s",&A);
 	a=strlen(A);
 	for(b=0;b<a;b++)
@@ -49,23 +54,25 @@ main()
 			B[0][0]=B[1][1];
 			B[1][1]=c;
 		}
+		
 	}
 	if(B[0][0]==1)
 	{
 		printf("1\n");
 	}
-	else if(B[0][1]==1)
+	if(B[0][1]==1)
 	{
 		printf("2\n");
 	}
-	else if(B[1][0]==1)
+	if(B[1][0]==1)
 	{
 		printf("3\n");
 	}
-	else if(B[1][1]==1)
+	if(B[1][1]==1)
 	{
 		printf("4\n");
 	}
+	d--;
 }
 
 }
