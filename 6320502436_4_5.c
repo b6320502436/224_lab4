@@ -6,7 +6,7 @@ int main()
 	char A[100]={};
 	scanf("%d",&d);
 	
-while(d>=0)
+while(d>0)
 	{
 	 B[0][0]=1;
         B[0][1]=0;
